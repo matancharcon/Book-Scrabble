@@ -1,4 +1,4 @@
-package test;
+package model.data;
 import java.util.Random;
 import java.util.Objects;
 public class Tile {

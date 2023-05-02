@@ -1,4 +1,4 @@
-package test;
+package model.data;
 import java.util.HashMap;
 import java.util.ArrayList;
 public class Board {
