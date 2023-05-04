@@ -1,4 +1,4 @@
-package test;
+package model.logic;
 import java.math.BigDecimal;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

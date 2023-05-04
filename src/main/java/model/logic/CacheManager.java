@@ -1,4 +1,4 @@
-package test;
+package model.logic;
 import java.util.HashSet;
 public class CacheManager {
 int max_size;

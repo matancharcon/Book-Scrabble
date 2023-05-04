@@ -1,9 +1,5 @@
-package test;
-
-
+package model.logic;
 import java.io.*;
-import java.sql.Array;
-import java.sql.Struct;
 import java.util.Arrays;
 
 public class BookScrabbleHandler implements ClientHandler {

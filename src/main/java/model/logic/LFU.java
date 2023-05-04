@@ -1,4 +1,4 @@
-package test;
+package model.logic;
 import java.util.*;
 import java.lang.String;
 import java.util.LinkedHashSet;

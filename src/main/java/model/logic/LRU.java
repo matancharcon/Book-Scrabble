@@ -1,5 +1,5 @@
-package test;
-import test.CacheReplacementPolicy;
+package model.logic;
+import model.logic.CacheReplacementPolicy;
 
 import java.util.Deque;
 import java.util.HashSet;

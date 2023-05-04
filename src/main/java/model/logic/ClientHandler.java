@@ -1,4 +1,4 @@
-package test;
+package model.logic;
 
 import java.io.InputStream;
 import java.io.OutputStream;
