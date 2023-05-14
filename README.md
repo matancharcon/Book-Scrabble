@@ -46,5 +46,5 @@ OpenAI for providing the GPT-3.5 language model that assisted in developing this
 Java community for the versatile programming language.
 Scrabble for inspiring the gameplay mechanics.
 Contact
-If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at your-email@example.com.
+If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at liadmizrahi1510@gmail.com.
 
