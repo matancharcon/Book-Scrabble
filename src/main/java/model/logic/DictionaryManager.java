@@ -23,7 +23,6 @@ public class DictionaryManager {
              }
          }
          return flag;
-
      }
      public boolean challenge(String... args){
          String[] s=new String[args.length-1];
@@ -42,7 +41,6 @@ public class DictionaryManager {
              }
          }
          return flag;
-
      }
 
      public int getSize(){
@@ -53,9 +51,6 @@ return search.size();
         if(dm==null) {
             dm=new DictionaryManager();
         }
-
         return dm;
     }
-
-
 }

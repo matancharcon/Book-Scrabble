@@ -9,7 +9,7 @@ public class Dictionary {
     CacheManager not_exist;
     BloomFilter b;
     String[] m_s;
-    Dictionary(String... s){
+    public Dictionary(String... s){
         exist=new CacheManager(400,new LRU());
         not_exist=new CacheManager(100,new LFU());
         b=new BloomFilter(256,"MD5","SHA1");
@@ -30,7 +30,7 @@ public class Dictionary {
            }
        }
     }
-    boolean query(String To_chack){
+    public boolean query(String To_chack){
 
         if(exist.query(To_chack))
             return  true;
@@ -43,7 +43,7 @@ public class Dictionary {
           }
           return false;
     }
-    boolean challenge(String To_chack){
+    public boolean challenge(String To_chack){
         try {
             if (IOSearcher.search(To_chack, m_s)) {
                 exist.add(To_chack);

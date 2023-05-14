@@ -15,10 +15,10 @@ public CacheManager(int size,CacheReplacementPolicy crp){
   counter=0;
 }
 
-boolean query(String word){
+public boolean query(String word){
     return w.contains(word);
 }
-void add(String s){
+public void add(String s){
     String ToRemove;
     if(counter==max_size){
         ToRemove=m_crp.remove();

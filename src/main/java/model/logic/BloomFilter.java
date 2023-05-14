@@ -18,7 +18,7 @@ public class BloomFilter {
         args=ags;
     }
 
-    void add(String ToAdd) {
+    public void add(String ToAdd) {
         int numofbit;
         byte[] bytes = ToAdd.getBytes();
         byte[] digset;
@@ -39,7 +39,7 @@ public class BloomFilter {
         }
     }
 
-        boolean contains(String s){
+        public boolean contains(String s){
             int numofbit;
             byte[] digset;
             BigInteger c;
@@ -71,10 +71,4 @@ public class BloomFilter {
               return new_s;
 
             }
-
-
-
-
-
-
 }

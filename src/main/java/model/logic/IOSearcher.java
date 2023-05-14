@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class IOSearcher {
 
 
-    static boolean search(String s,String... FileName)  {
+    public static boolean search(String s, String... FileName)  {
 
         for(String name:FileName){
             File f=new File(name);
@@ -20,17 +20,11 @@ public class IOSearcher {
                     }
                 }
                 in.close();
-
             }
             catch (FileNotFoundException e) {
                 throw new RuntimeException(e);
             }
         }
-
         return false;
-
     }
-
-
-
 }

@@ -13,7 +13,6 @@ public class MyServer {
     public MyServer(int p, ClientHandler ch) {
         this.port = p;
         this.ch = ch;
-
     }
 
     public void start() {
