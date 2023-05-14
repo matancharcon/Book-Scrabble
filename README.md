@@ -46,3 +46,5 @@ Scrabble for inspiring the gameplay mechanics.
 Contact
 If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at liadmizrahi1510@gmail.com.
 
+C:\Users\user\OneDrive\Desktop\gantt chart - book scrabble.png
+
