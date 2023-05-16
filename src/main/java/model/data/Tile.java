@@ -13,6 +13,7 @@ public class Tile {
         this.letter = letter;
         this.score = score;
         this.max_amount=max_amount;
+
     }
 
     @Override
@@ -33,12 +34,12 @@ public class Tile {
     }
 
     public static class Bag{
-        private static Bag b=null;
-        final Tile[] tiles=new Tile[26];
-        int[] amount=new int[26];
-        int counter=98;
+            private static Tile.Bag b=null;
+            final Tile[] tiles=new Tile[26];
+            int[] amount=new int[26];
+            int counter=98;
 
-        private Bag() {
+            private Bag() {
             amount[0]=9;
             amount[1]=2;
             amount[2]=2;
@@ -138,6 +139,7 @@ public class Tile {
                 arr[i]=amount[i];
             }
             return arr;
+
         }
         public static Bag getBag() {
             if(b==null)
@@ -145,9 +147,5 @@ public class Tile {
             return b;
 
         }
-
-
-
     }
-
 }

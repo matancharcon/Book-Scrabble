@@ -131,7 +131,6 @@ public class Board {
         if(b==null) {
             b=new Board();
         }
-
         return b;
     }
 
@@ -216,7 +215,7 @@ public class Board {
         return true;
     }
 
-    public ArrayList<Word>getWords(Word w){
+    public ArrayList<Word> getWords(Word w){
         int row=w.getRow();
         int col=w.getCol();
         int r,c;
@@ -235,8 +234,6 @@ public class Board {
                     new_word=createWord(r,c,!(w.getVertical()));
                     if(dictionaryLegal(new_word))
                         words.add(new_word);
-
-
                 }
             }
             else {
@@ -291,9 +288,6 @@ public class Board {
         }
         new_word=new Word(t,row,col,vertical);
         return new_word;
-
-
-
     }
 
     public int tryPlaceWord(Word w) {
