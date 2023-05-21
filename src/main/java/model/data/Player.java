@@ -12,6 +12,18 @@ public class Player {
         this.score = 0;
         hand=new ArrayList<>();
     }
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setHand(List<Tile> hand) {
+        this.hand = hand;
+    }
+
     public int getScore() {
         return score;
     }

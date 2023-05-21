@@ -2,6 +2,7 @@ package model.data;
 
 public class PlayerModel implements Facade{
     Player player;
+    Board board;
     public PlayerModel(Player player) {
         this.player = player;
     }
@@ -11,8 +12,8 @@ public class PlayerModel implements Facade{
     }
 
     @Override
-    public boolean TryPlaceWord(Word word) {
-        return false;
+    public int TryPlaceWord(Word word) {
+       return board.tryPlaceWord(word);
     }
 
     @Override
