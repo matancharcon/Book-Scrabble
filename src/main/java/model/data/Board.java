@@ -212,6 +212,8 @@ public class Board {
 
     }
     public boolean dictionaryLegal(Word w) {
+
+
         return true;
     }
 

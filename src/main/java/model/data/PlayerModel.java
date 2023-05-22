@@ -13,7 +13,7 @@ public class PlayerModel implements Facade{
 
     @Override
     public int TryPlaceWord(Word word) {
-       return board.tryPlaceWord(word);
+       return 0;
     }
 
     @Override
