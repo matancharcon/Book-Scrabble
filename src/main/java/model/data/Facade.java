@@ -2,9 +2,13 @@ package model.data;
 
 public interface Facade {
        int GetPlayerScore();
-       int TryPlaceWord(Word word);
-       void SubmitWord(Word word);
-       Player GetWinner();
+       int TryPlaceWord(String name,int row,int col,boolean vertical,char[] _tiles);
+       int Challenge(String name,int row,int col,boolean vertical,char[] _tiles);
+       void PassTurn();
+       void StartGame();
+       void EndGame();
+
+
 
 
 

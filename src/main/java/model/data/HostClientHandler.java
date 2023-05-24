@@ -1,37 +1,56 @@
 package model.data;
 
+import model.logic.ClientHandler;
 import model.logic.MyServer;
+import java.io.*;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.SocketException;
+import java.net.SocketTimeoutException;
+import java.util.*;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
-public class HostClientHandler extends Thread {
-        private Socket clientSocket;
-        private InputStream inputStream;
-        private OutputStream outputStream;
-        public MyServer myServer;
+public class HostClientHandler {
 
-        public HostClientHandler(Socket clientSocket, MyServer myServer) throws IOException {
-                this.clientSocket = clientSocket;
-                inputStream = clientSocket.getInputStream();
-                outputStream = clientSocket.getOutputStream();
-                this.myServer = myServer;
+    public void handleClient(InputStream inFromclient, OutputStream outToClient) {
+        try {
+
+            PrintWriter out = new PrintWriter(outToClient, true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(inFromclient));
+
+            String[] data=in.readLine().split("_");
+
+           switch (data[0]){
+               case "try":
+                   int result=tryPlaceWord(data[1],data[2],data[3],)
+
+
+               case "cha":
+
+               case "sta":
+
+               case  "end":
+
+
+           }
+
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
 
-        @Override
-        public void run() {
-                try {
-                        // Handle the client connection in a separate thread
-                        myServer.ch.handleClient(inputStream, outputStream);
-                } finally {
-                        // Close the client socket
-                        try {
-                                clientSocket.close();
-                        } catch (IOException e) {
-                                e.printStackTrace();
-                        }
-                }
-        }
+    }
+
+    public int tryPlaceWord(String name,int row,int col,boolean vertical,char[] _tiles) {
+
+
+    }
+
+
+
+
 }
