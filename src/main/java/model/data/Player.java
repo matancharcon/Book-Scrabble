@@ -2,24 +2,31 @@ package model.data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
 
-public class Player {
+public class  Player extends Observable {
     int score;
-    int id;
+    String ip;
+    int port;
+    static int numofplayers;
+    String name;
+
+    Tile first_letter;
     List<Tile> hand;
-    public Player(int id) {
-        this.id = id;
+    public Player(String ip,int port) {
+        numofplayers++;
+        this.name="player"+numofplayers;
+        this.ip=ip;
+        this.port=port;
         this.score = 0;
         hand=new ArrayList<>();
     }
+
+
     public void setScore(int score) {
         this.score = score;
     }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
+    
     public void setHand(List<Tile> hand) {
         this.hand = hand;
     }

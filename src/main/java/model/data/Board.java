@@ -296,6 +296,8 @@ public class Board {
         int sum_total=0;
         boolean first=false;
         ArrayList<Word> words=new ArrayList<>();
+        if(!dictionaryLegal(w))
+            return -1;
         if(boardLegal(w)) {
             int row=w.getRow();
             int col=w.getCol();
