@@ -3,7 +3,6 @@ Book Scrabble is a desktop application written in Java that brings the classic S
 It allows players to engage in both single-player and multiplayer modes, providing an enjoyable and challenging experience for word game enthusiasts.
 
 Features
-- Single-player mode: Test your skills and improve your vocabulary by playing against the computer.
 - Multiplayer mode: Challenge your friends or other players online in real-time matches.
 - Book-themed gameplay: Instead of traditional letter tiles, players use book titles and author names to form words.
 - Score tracking: The game automatically calculates and displays the scores of each player during the match.
