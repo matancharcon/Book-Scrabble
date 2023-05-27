@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 
-public class Player {
+public  class Player {
     int score;
     String ip;
     int port;
@@ -35,9 +35,6 @@ public class Player {
     public void UpdateScore(int s){
         score+=s;
     }
-    public List<Tile> GetHand() {
-        return hand;
-    }
     public void AddTileToHand(Tile tile){
         hand.add(tile);
     }
@@ -47,4 +44,5 @@ public class Player {
     public void setName(String name) {
         this.name = name;
     }
+    public Player GetPlayer(){return this;}
 }

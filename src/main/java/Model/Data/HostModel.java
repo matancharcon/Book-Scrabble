@@ -42,7 +42,7 @@ public class HostModel extends Player implements Facade{
     }
     public void startServer() throws Exception {
         try{
-            server = new ServerSocket(8080);
+            server = new ServerSocket(8084);
             server.setSoTimeout(1000);
             while (!stop) {
                 try {
@@ -137,7 +137,6 @@ public class HostModel extends Player implements Facade{
         for(Player p:turns){
             p.hand.addAll(Get_Tiles());
         }
-
     }
     @Override
     public void EndGame() {

@@ -2,6 +2,7 @@ package Model.Data;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.HashMap;
 import java.util.List;
 
 public class GuestModel extends Player implements Facade {
@@ -18,6 +19,7 @@ public class GuestModel extends Player implements Facade {
         ob=new ObjectInputStream(socket.getInputStream());
         setIp(ip);
         setPort(port);
+
     }
 
     public int tryPlaceWord(String name, int row, int col, boolean vertical, char[] _tiles) {
@@ -67,7 +69,6 @@ public class GuestModel extends Player implements Facade {
             StringBuilder out = new StringBuilder("sta_");
             out.append(name);
             outToServer.println(out);
-            String result=in.readLine();
         } catch (Exception e) {throw new RuntimeException(e);}
     }
     public void EndGame() {

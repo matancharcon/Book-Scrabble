@@ -17,7 +17,7 @@ public class HostModelTest {
         if(hm.GetFirstLetter(hm.getName())==null){
             System.out.println("problem with starting a game - first-letter");
         }
-        char[] t ={'t','h','i','s'};
+        char[] t ={'t','h','e'};
         if (hm.tryPlaceWord(hm.getName(),7,7,true,t) <1){
             System.out.println("problem with placing word ");
         }
