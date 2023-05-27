@@ -78,21 +78,24 @@ public class HostModel extends Player implements Facade{
                     tile=null;
                 }
 
-
         int result=board.tryPlaceWord(new Word(_word,row,col,vertical));
         if (result>0) {
             setChanged();
             notifyObservers();
         }
         return result;
-
     }
 
     public int Challenge(String name, int row, int col, boolean vertical, char[] _tiles){
         return 0;
     }
-    public void PassTurn() {}
+    public void PassTurn() {
+        turns.offer(turns.remove());
+//        countTurns++;
+//        if(countTurns==20*players.size())
+//            endGame();
 
+    }
     @Override
     public void StartGame() {
         Tile t;
@@ -103,15 +106,17 @@ public class HostModel extends Player implements Facade{
         }
         for(Player p:turns){
             p.hand.addAll(Get_Tiles());
-
         }
+    }
+
+    public void EndGame() {
+
+
 
     }
 
-    public void EndGame() {}
-
     public List<Tile> Get_Tiles() {
-        List<Tile> tiles=new ArrayList<>()
+        List<Tile> tiles=new ArrayList<>();
         for (int i = 0; i < 7; i++)
             tiles.add(Tile.Bag.getBag().getRand());
         return tiles;
