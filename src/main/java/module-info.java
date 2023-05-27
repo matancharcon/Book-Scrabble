@@ -5,6 +5,6 @@ module com.example.bookscrabble {
 
     opens com.example.bookscrabble to javafx.fxml;
     //exports com.example.bookscrabble;
-    exports view;
-    opens view to javafx.fxml;
+    exports View;
+    opens View to javafx.fxml;
 }
