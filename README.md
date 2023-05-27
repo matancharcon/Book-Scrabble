@@ -38,11 +38,6 @@ Fork the repository.
 - Commit your changes and push them to your forked repository.
 - Submit a pull request, explaining the changes you've made.
 
-Acknowledgments
-OpenAI for providing the GPT-3.5 language model that assisted in developing this project.
-Java community for the versatile programming language.
-Scrabble for inspiring the gameplay mechanics.
-Contact
 If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at liadmizrahi1510@gmail.com.
 
 ![gantt chart - book scrabble](https://github.com/matancharcon/Book-Scrabble/assets/131164262/49b82218-848e-4190-aaf6-f1c9398f2971)
