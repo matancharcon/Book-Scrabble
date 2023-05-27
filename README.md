@@ -40,7 +40,7 @@ Fork the repository.
 - Submit a pull request, explaining the changes you've made.
 
 Acknowledgments
-OpenAI for providing the GPT-3.5 language model that assisted in developing this project.
+OpenAI for providing the GPT-3.5 language Model that assisted in developing this project.
 Java community for the versatile programming language.
 Scrabble for inspiring the gameplay mechanics.
 Contact
