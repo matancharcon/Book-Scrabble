@@ -23,7 +23,7 @@ Compile the Java source files by running the following command:
 
 Usage
 - Launch the Book Scrabble application.
-- Choose the game mode (single-player or multiplayer) from the main menu.
+- Choose the game mode (creat a game or join a game) from the main menu.
 - Follow the on-screen instructions to play the game.
 - Use your keyboard to enter book titles or author names to form words.
 - Press Enter to submit your word. The game will verify its validity and update the score accordingly.
@@ -46,5 +46,4 @@ Scrabble for inspiring the gameplay mechanics.
 Contact
 If you have any questions, suggestions, or feedback, please feel free to contact the project maintainer at liadmizrahi1510@gmail.com.
 
-C:\Users\user\OneDrive\Desktop\gantt chart - book scrabble.png
-
+![gantt chart - book scrabble](https://github.com/matancharcon/Book-Scrabble/assets/131164262/49b82218-848e-4190-aaf6-f1c9398f2971)
